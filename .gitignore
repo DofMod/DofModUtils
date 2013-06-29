@@ -1,0 +1,7 @@
+obj/
+*.swf
+*.lxml
+*.as3proj
+
+Api.as
+Main.as
