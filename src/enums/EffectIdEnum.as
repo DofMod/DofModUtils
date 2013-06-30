@@ -110,6 +110,8 @@ package enums
 		public static const DAMAGE_NEUTRAL:int = 430;
 		public static const NEGATIVE_DAMAGE_NEUTRAL:int = 431;
 		
+		public static const SOUL_CAPTURE:int = 705;
+		
 		public static const ESCAPE:int = 752;
 		public static const TACKLE:int = 753;
 		public static const NEGATIVE_ESCAPE:int = 754;
