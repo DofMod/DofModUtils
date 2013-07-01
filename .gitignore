@@ -3,3 +3,5 @@ obj/
 *.swc
 *.lxml
 *.as3proj
+compileWin.bat
+
