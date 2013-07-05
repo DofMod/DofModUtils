@@ -119,6 +119,8 @@ package enums
 		public static const EROSION:int = 776;
 		public static const HUNTER:int = 795;
 		
+		public static const KEY:int = 814;
+		
 		public static const STATE_APPLY:int = 950;
 		public static const STATE_REMOVE:int = 951;
 		public static const STATE_DISABLE:int = 952;
