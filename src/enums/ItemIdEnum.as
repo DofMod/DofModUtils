@@ -40,5 +40,7 @@ package enums
 		public static const SOULSTONE_LVL2000_75:int = 9476;
 		
 		public static const SOULSTONE_KRALA:int = 9718;
+		
+		private static const KEYRING : int = 10207;
 	}
 }
