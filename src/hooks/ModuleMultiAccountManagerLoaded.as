@@ -1,5 +1,6 @@
 package hooks
 {
+	import flash.utils.getQualifiedClassName;
 	
 	/**
 	 * Tel others modules that the MultiAccountManager is loaded.
@@ -10,5 +11,6 @@ package hooks
 	 */
 	public class ModuleMultiAccountManagerLoaded
 	{
+		public static const name:String = getQualifiedClassName(ModuleMultiAccountManagerLoaded).split("::").pop();
 	}
 }
