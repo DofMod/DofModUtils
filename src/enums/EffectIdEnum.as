@@ -76,7 +76,7 @@ package enums
 		
 		public static const BONUS_DAMAGE_RETURN:int = 220;
 		public static const BONUS_TRAP_DAMAGE:int = 225;
-		public static const BONUS_TRAP_DAMAGE_PERCENT_TRAP:int = 226;
+		public static const BONUS_TRAP_DAMAGE_PERCENT:int = 226;
 		
 		public static const BONUS_RESISTANCE_EARTH:int = 240;
 		public static const BONUS_RESISTANCE_WATER:int = 241;
