@@ -6,7 +6,7 @@ package enums
 	 * 
 	 * @author Relena
 	 */
-	public class ConfigEnum
+	public class MenuMakerEnum
 	{
 		public static const HUMAN_VENDOR:String = "humanVendor";
 		public static const MULTIPLAYER:String = "multiplayer";
