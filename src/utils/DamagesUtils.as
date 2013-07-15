@@ -12,6 +12,7 @@ package utils
 	import enums.BuffEffectCategoryEnum;
 	import enums.EffectIdEnum;
 	import enums.ItemTypeIdEnum;
+	import enums.SpellStateIdEnum;
 	import enums.TargetMaskEnum;
 	import types.EffectDamages;
 	import types.SpellDamages;
@@ -435,12 +436,12 @@ package utils
 			
 			for each(var buff:Object in _fightApi.getAllBuffEffects(fighterId).buffArray[BuffEffectCategoryEnum.STATES])
 			{
-				if (buff.effects.effectId == EffectIdEnum.STATE_DISABLE && buff.effects.parameter0 == EffectIdEnum.STATE_INVULNERABLE)
+				if (buff.effects.effectId == EffectIdEnum.STATE_DISABLE && buff.effects.parameter0 == SpellStateIdEnum.INVULNERABLE)
 				{
 					return true;
 				}
 				
-				if (buff.effects.effectId == EffectIdEnum.STATE_APPLY && buff.effects.parameter0 == EffectIdEnum.STATE_INVULNERABLE)
+				if (buff.effects.effectId == EffectIdEnum.STATE_APPLY && buff.effects.parameter0 == SpellStateIdEnum.INVULNERABLE)
 				{
 					invulnerable = false;
 				}
@@ -524,7 +525,7 @@ package utils
 		{
 			var buffList:EffectsListWrapper = _fightApi.getAllBuffEffects(target.contextualId);
 			
-			for each (var category:Object in buffList.categories) 
+			for each (var category:Object in buffList.categories)
 			{
 				for each (var buff:Object in buffList.buffArray[category]) 
 				{

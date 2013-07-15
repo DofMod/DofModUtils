@@ -127,13 +127,5 @@ package enums
 		
 		public static const ATTACK_ERODED_HP_PERCENT:int = 1093;
 		public static const SKILL_WEAPON:int = 1144;
-		
-		// States
-		public static const STATE_DRUNK:int = 1;
-		public static const STATE_CARRYING:int = 3;
-		public static const STATE_ROOTED:int = 6;
-		public static const STATE_WEAKENED:int = 42;
-		public static const STATE_INVULNERABLE:int = 56;
-		public static const STATE_HASTY:int = 151;
 	}
 }
