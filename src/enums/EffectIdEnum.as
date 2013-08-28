@@ -94,6 +94,7 @@ package enums
 		public static const BONUS_WITHDRAW_MP:int = 412;
 		public static const MALUS_WITHDRAW_MP:int = 413;
 		public static const BONUS_DAMAGE_PUSH:int = 414;
+		public static const MALUS_DAMAGE_PUSH:int = 415;
 		public static const BONUS_RESISTANCE_PUSH:int = 416;
 		public static const MALUS_RESISTANCE_PUSH:int = 417;
 		public static const BONUS_RESISTANCE_CRITICAL:int = 420;
