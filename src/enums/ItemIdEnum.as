@@ -116,6 +116,8 @@ package enums
 		public static const NILEZA_S_LABORATORY_KEY:int = 14046;
 		public static const COUNT_HAREBOURG_S_DUNGEON_KEY:int = 14047;
 		
+		public static const RUNE_SIGNATURE:int = 7508;
+		
 		// sysApi.log(8, "public static const " + dataApi.getItem(keyId).name.replace(RegExp(/[ ']/g), "_").toLocaleUpperCase() + ":int = " + keyId + ";");
 	}
 }
