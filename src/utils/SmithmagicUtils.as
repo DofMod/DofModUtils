@@ -1,14 +1,15 @@
 package utils
 {
 	import enums.EffectIdEnum;
+	import enums.ItemIdEnum;
 	
 	/**
 	 * ...
 	 * @author Relena
 	 */
-	public class RuneWeightUtils
+	public class SmithmagicUtils
 	{
-		public static function getWeight(effectId:int):Number
+		public static function getEffectWeight(effectId:int):Number
 		{
 			switch (effectId)
 			{
@@ -89,7 +90,7 @@ package utils
 				case EffectIdEnum.BONUS_DAMAGE_AIR: 
 				case EffectIdEnum.BONUS_DAMAGE_EARTH: 
 				case EffectIdEnum.BONUS_DAMAGE_WATER: 
-				case EffectIdEnum.BONUS_DAMAGE_PUSH: 
+				case EffectIdEnum.BONUS_DAMAGE_PUSH:
 				
 				case EffectIdEnum.HUNTER:
 				
@@ -136,6 +137,61 @@ package utils
 			}
 			
 			return 0;
+		}
+		
+		/**
+		 * Return the rune subtype
+		 * - 1: Simple rune
+		 * - 2: PA
+		 * - 3: RA
+		 */
+		public static function getRuneSubtype(itemId:int):int
+		{
+			switch (itemId)
+			{
+				case ItemIdEnum.RA_STRE_RUNE: 
+				case ItemIdEnum.RA_WIS_RUNE: 
+				case ItemIdEnum.RA_INT_RUNE: 
+				case ItemIdEnum.RA_VIT_RUNE: 
+				case ItemIdEnum.RA_AGI_RUNE: 
+				case ItemIdEnum.RA_CHA_RUNE: 
+				case ItemIdEnum.RA_POD_RUNE: 
+				case ItemIdEnum.RA_INI_RUNE: 
+				case ItemIdEnum.RA_TRA_PER_RUNE: 
+				case ItemIdEnum.RA_POW_RUNE: 
+					return 3;
+				
+				case ItemIdEnum.PA_STRE_RUNE: 
+				case ItemIdEnum.PA_WIS_RUNE: 
+				case ItemIdEnum.PA_INT_RUNE: 
+				case ItemIdEnum.PA_VIT_RUNE: 
+				case ItemIdEnum.PA_AGI_RUNE: 
+				case ItemIdEnum.PA_CHA_RUNE: 
+				case ItemIdEnum.PA_POD_RUNE: 
+				case ItemIdEnum.PA_INI_RUNE: 
+				case ItemIdEnum.PA_TRA_RUNE: 
+				case ItemIdEnum.PA_TRA_PER_RUNE: 
+				case ItemIdEnum.PA_POW_RUNE: 
+				case ItemIdEnum.PA_PROSPE_RUNE: 
+				case ItemIdEnum.PA_DOD_RUNE: 
+				case ItemIdEnum.PA_LOC_RUNE: 
+				case ItemIdEnum.PA_AP_RES_RUNE: 
+				case ItemIdEnum.PA_MP_RES_RUNE: 
+				case ItemIdEnum.PA_AP_RED_RUNE: 
+				case ItemIdEnum.PA_MP_RED_RUNE: 
+				case ItemIdEnum.PA_PSH_DAM_RUNE: 
+				case ItemIdEnum.PA_PSH_RES_RUNE: 
+				case ItemIdEnum.PA_CRI_DAM_RUNE: 
+				case ItemIdEnum.PA_CRI_RES_RUNE: 
+				case ItemIdEnum.PA_EARTH_DAM_RUNE: 
+				case ItemIdEnum.PA_FIRE_DAM_RUNE: 
+				case ItemIdEnum.PA_WATER_DAM_RUNE: 
+				case ItemIdEnum.PA_AIR_DAM_RUNE: 
+				case ItemIdEnum.PA_NEUTRAL_DAM_RUNE: 
+					return 2;
+			}
+			
+			return 1;
 		}
 	}
 }
