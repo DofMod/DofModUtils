@@ -7,7 +7,7 @@ package enums
 	 */
 	public class ShortcutEnum
 	{
-		private static const VALID_UI:String = 'validUi';
-		private static const CLOSE_UI:String = 'closeUi';
+		public static const VALID_UI:String = 'validUi';
+		public static const CLOSE_UI:String = 'closeUi';
 	}
 }
