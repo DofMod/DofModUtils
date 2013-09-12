@@ -1,4 +1,4 @@
-Dofus Module utils.
+D0FU5 Module utils.
 ===================
 
 Note: **This is not a module**! Juste a helper library for your modules.
@@ -111,4 +111,4 @@ Errors:
 
 ###
 * **Error:** "Unknow file: modules-library.swc"
-* **Solution:** Copy the dofus module library in this directory (or enter the full path)
+* **Solution:** Copy the d0fuS module library in this directory (or enter the full path)
